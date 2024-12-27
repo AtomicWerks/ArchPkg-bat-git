@@ -3,13 +3,14 @@
 
 _pkgname='bat'
 pkgname="bat-cat-git"
-pkgver=r2621.e828d784
-pkgrel=2
+pkgver=r3163.3e07483f
+pkgrel=1
 pkgdesc="A cat(1) clone with wings."
 arch=('x86_64')
 url='https://github.com/sharkdp/bat'
 license=('Apache-2.0')
 makedepends=('git' 'rust' 'clang' 'bash' 'sed')
+options=('!lto')
 provides=('bat')
 conflicts=('bat')
 source=("git+https://github.com/sharkdp/${_pkgname}")
